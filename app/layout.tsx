@@ -1,16 +1,22 @@
-export const metadata = {
-  title: 'Flexible',
-  description: 'Shwocase and discover remarkable develper project',
-}
+import "./globals.css";
+// import Footer from "@/components/Footer";
+// import Navbar from "@/components/Navbar";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export const metadata = {
+  title: "Flexibble",
+  description: "Showcase and discover remarkable developer projects",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang='en'>
+      <body>
+        {/* <Navbar /> */} navbar
+        <main>
+          {children}
+        </main>
+        {/* <Footer /> */} footer
+      </body>
     </html>
-  )
+  );
 }
